@@ -24,11 +24,11 @@ sarah2 = Guest.new('Sarah', 'B')
 
 # p Guest.all
 
-Trip.new(seattle1, tommy)
-Trip.new(seattle1, charles)
-Trip.new(washington, sarah)
-Trip.new(losangeles, tommy)
-Trip.new(seattle2, charles)
+one = Trip.new(seattle1, tommy)
+two = Trip.new(seattle1, charles)
+three = Trip.new(washington, sarah)
+four = Trip.new(losangeles, tommy)
+five = Trip.new(seattle2, charles)
 
 #p Trip.all
 
@@ -56,7 +56,9 @@ Trip.new(seattle2, charles)
 # p "Should return 2 Sarahs with different last name"
 # p Guest.find_all_by_name('Sarah')
 
-
+#testing the Trip .listing and .guest methods
+# p one.listing
+# p one.guest
 
 
 

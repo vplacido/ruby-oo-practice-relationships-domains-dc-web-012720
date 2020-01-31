@@ -1,6 +1,6 @@
 class Trip
 
-    attr_accessor :listing, :guest
+    attr_reader :listing, :guest
 
     @@all = []
 
@@ -16,16 +16,4 @@ class Trip
     def self.all
         @@all
     end
-
-    #! Above is individual methods
-    #//                         
-    #! Below is relationship methods
-
-    # def listing
-    # end
-    # def guest
-    # end
-
-
-
 end
