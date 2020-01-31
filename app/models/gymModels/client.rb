@@ -13,7 +13,7 @@ class Client
         @@all
     end
 
-    def assign_trainer(trainer_instance, location_string)
+    def assign_trainer(trainer_instance, location_string='none')
         Location.new(self, trainer_instance, location_string)
     end
 end

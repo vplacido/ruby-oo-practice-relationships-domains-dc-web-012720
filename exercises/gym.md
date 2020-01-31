@@ -20,16 +20,16 @@ relationships.* What method can I call on a location to find all its clients,
 etc?
 
 #### Client
-
+<!-- 
 - #assign_trainer
-  - should take a trainer as argument and assign it to the client
+  - should take a trainer as argument and assign it to the client -->
 
 #### Location
 
-- .least_clients
-  - should find which location has the least clients training there. we need to increase the marketing spend for that location!
+<!-- - .least_clients
+  - should find which location has the least clients training there. we need to increase the marketing spend for that location! -->
 
 #### Trainer
 
-- .most_clients
-  - should find which trainer has the most clients. give that trainer a bonus!
+<!-- - .most_clients
+  - should find which trainer has the most clients. give that trainer a bonus! -->
