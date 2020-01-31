@@ -17,9 +17,10 @@ losangeles = Listing.new('Los Angeles')
 
 # p Listing.all
 
-tommy = Guest.new('Tommy T')
-charles = Guest.new('Charles C')
-sarah = Guest.new('Sarah S')
+tommy = Guest.new('Tommy', 'T')
+charles = Guest.new('Charles', 'C')
+sarah = Guest.new('Sarah', 'A' )
+sarah2 = Guest.new('Sarah', 'B')
 
 # p Guest.all
 
@@ -27,17 +28,40 @@ Trip.new(seattle1, tommy)
 Trip.new(seattle1, charles)
 Trip.new(washington, sarah)
 Trip.new(losangeles, tommy)
+Trip.new(seattle2, charles)
 
 #p Trip.all
-# p "testing if #guest and trups returns 2"
 
+#! Listing methods
+# p "testing if #guest and trups returns 2"
 # p seattle.guest.length
 # p seattle.trips.length
 
-#testing if .find_all_by_city returns 3
-#p Listing.find_all_by_city("Seattle").length
+# p "testing if .find_all_by_city returns 3"
+# p Listing.find_all_by_city("Seattle").length
 
-p Listing.most_popular
+# p "Should return Seattle"
+# p Listing.most_popular
+
+#! Guest methods
+# p "Should return 2"
+# p tommy.listings.length
+# p tommy.trips.length
+
+# p "Should return [charles, tommy]"
+# p sarah.trip_count
+# p Guest.all
+# p Guest.pro_traveller
+
+# p "Should return 2 Sarahs with different last name"
+# p Guest.find_all_by_name('Sarah')
+
+
+
+
+
+
+
 
 # binding.pry
 
